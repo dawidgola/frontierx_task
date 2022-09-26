@@ -1,10 +1,10 @@
 import Head from 'next/head';
-import MainTemplate from '@/templates/MainTemplate';
-import Navbar from '@/components/Navbar';
+import MainTemplate from '@/components/layouts/MainTemplate';
+import Navbar from '@/components/layouts/Navbar';
 import BannerSection from '@/components/section/BannerSection';
 import InformationSection from '@/components/section/InformationSection';
 import AccordionsSection from '@/components/section/AccordionsSection';
-import Footer from '@/components/Footer';
+import Footer from '@/components/layouts/Footer';
 import Seperator from '@/components/global/Seperator';
 
 export default function Home() {
