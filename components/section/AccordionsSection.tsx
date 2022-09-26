@@ -4,13 +4,13 @@ import AccordionBox from '@/components/global/AccordionBox';
 import IconWithUrl from '@/components/global/IconWithUrl';
 import { accordion_box_items, accordion_icon_items } from '@/static/index';
 
-const AccordionsSection = () => {
+const AccordionsSection = (): JSX.Element => {
   return (
-    <div className="mt-[70px] mb-[12px]">
-      <div className="max-w-[1280px] p-[16px] lg:p-0 flex flex-wrap justify-center xl:justify-end gap-y-6 gap-x-5 mr-auto ml-auto">
+    <div className="mt-16 mb-3">
+      <div className="p-4 lg:p-0 flex flex-wrap justify-center xl:justify-center gap-y-6 gap-x-5 mr-auto ml-auto">
         <Accordion iconHeader={<Icon2 />} header="Lorem ipsum">
           <div>
-            <div className="text-[14px] text-white mb-[42px]">
+            <div className="text-sm text-white mb-10">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -25,16 +25,18 @@ const AccordionsSection = () => {
             </div>
           </div>
         </Accordion>
-        <Accordion secondary iconHeader={<Icon2 />} header="Lorem ipsum">
-          <div className="flex flex-wrap gap-y-[8px] gap-x-[9px]">
-            {accordion_box_items.map((props, index) => (
-              <AccordionBox key={index} {...props} />
-            ))}
-          </div>
-        </Accordion>
-        <Accordion iconHeader={<Icon2 />} header="Lorem ipsum">
-          Lorem ipsum
-        </Accordion>
+        <div className="flex flex-col justify-start gap-6 lg:max-w-[591px] w-full">
+          <Accordion secondary iconHeader={<Icon2 />} header="Lorem ipsum">
+            <div className="flex flex-wrap gap-y-2 gap-x-2">
+              {accordion_box_items.map((props, index) => (
+                <AccordionBox key={index} {...props} />
+              ))}
+            </div>
+          </Accordion>
+          <Accordion iconHeader={<Icon2 />} header="Lorem ipsum">
+            Lorem ipsum
+          </Accordion>
+        </div>
       </div>
     </div>
   );
