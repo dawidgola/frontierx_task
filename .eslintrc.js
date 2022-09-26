@@ -7,6 +7,7 @@ module.exports = {
     'plugin:react/recommended',
     'airbnb',
     'plugin:@next/recommended',
+    'plugin:@typescript-eslint/recommended',
     'prettier',
   ],
   overrides: [],

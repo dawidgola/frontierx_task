@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect, useRef, useState } from 'react';
 import NET from 'vanta/dist/vanta.net.min';
 import * as THREE from 'three';
+import Container from '@/components/global/Container';
 
 const MainTemplate = ({ children }) => {
   const [vantaEffect, setVantaEffect] = useState(0);
@@ -19,16 +20,16 @@ const MainTemplate = ({ children }) => {
       );
     }
     return () => {
-      if (vantaEffect) vantaEffect.destory();
+      if (vantaEffect) vantaEffect.destroy();
     };
   }, [vantaEffect]);
   return (
     <div className="flex justify-center h-full relative">
       <div
-        className="absolute h-full top-0 left-[222px] right-0 z-[0] custom-gradient"
+        className="absolute h-full top-0 left-0 lg:left-[222px] right-0 z-[0] bg-pattern-main-gradient -rotate-180"
         ref={vantaRef}
       ></div>
-      <div className="wrapper z-[1]">{children}</div>
+      <Container>{children}</Container>
     </div>
   );
 };
