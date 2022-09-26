@@ -42,7 +42,7 @@
     "**/*.ts",
     "**/*.tsx",
     "assets/icons/index.tsx",
-    "templates/MainTemplate.jsx",
+    "components/layouts/MainTemplate.jsx",
     "tailwind.config.js"
   ],
   "exclude": [
