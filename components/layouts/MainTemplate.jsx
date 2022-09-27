@@ -14,7 +14,7 @@ const MainTemplate = ({ children }) => {
           el: vantaRef.current,
           THREE,
           backgroundColor: 0x0,
-          maxDistance: 1.0,
+          maxDistance: 2.0,
           backgroundAlpha: 0.0,
         })
       );
@@ -26,7 +26,7 @@ const MainTemplate = ({ children }) => {
   return (
     <div className="flex justify-center h-full relative">
       <div
-        className="absolute h-full top-0 left-0 lg:left-[222px] right-0 z-[0] bg-pattern-main-gradient -rotate-180"
+        className="absolute h-full top-0 left-0 right-0 z-[0] bg-pattern-main-gradient -rotate-180"
         ref={vantaRef}
       ></div>
       <Container>{children}</Container>

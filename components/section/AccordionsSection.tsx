@@ -19,8 +19,8 @@ const AccordionsSection = (): JSX.Element => {
               nulla pariatur
             </div>
             <div className="flex flex-wrap justify-start gap-y-5 gap-x-5">
-              {accordion_icon_items.map((props, index) => (
-                <IconWithUrl key={index} {...props} />
+              {accordion_icon_items.map((props) => (
+                <IconWithUrl key={props.id} {...props} />
               ))}
             </div>
           </div>
@@ -28,8 +28,8 @@ const AccordionsSection = (): JSX.Element => {
         <div className="flex flex-col justify-start gap-6 lg:max-w-[591px] w-full">
           <Accordion secondary iconHeader={<Icon2 />} header="Lorem ipsum">
             <div className="flex flex-wrap gap-y-2 gap-x-2">
-              {accordion_box_items.map((props, index) => (
-                <AccordionBox key={index} {...props} />
+              {accordion_box_items.map((props) => (
+                <AccordionBox key={props.id} {...props} />
               ))}
             </div>
           </Accordion>
