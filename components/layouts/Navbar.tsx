@@ -29,7 +29,10 @@ const Navbar = (): JSX.Element => {
           <div className="p-5 lg:p-0">
             <ul className="flex">
               {menu_item.map(({ name, url }) => (
-                <li key={name} className="p-1.5 lg:pl-10 hover:text-[#A2A2A2]">
+                <li
+                  key={name}
+                  className="p-1.5 lg:pl-10 hover:text-pattern-gray"
+                >
                   <Link href={url}>{name}</Link>
                 </li>
               ))}

@@ -25,7 +25,7 @@ const SearchInput = ({
       <IconSearch />
     </div>
     <input
-      className=" lg:min-w-[400px] xl:min-w-[657px] text-{13px} font-semibold  p-3 rounded-[10px] bg-[#1F1F1F] pl-14 text-[#A2A2A2]"
+      className=" lg:min-w-[400px] xl:min-w-[657px] text-base font-semibold  p-3 rounded-[10px] bg-pattern-gray12 pl-14 text-pattern-gray"
       type={type}
       value={value}
       onChange={onChange}
