@@ -13,7 +13,7 @@ Below you will find instructions on how to start the application locally.
 
 1. Clone the repo
    ```sh
-    git clone [https://github.com/dawidgola/frontierx_task.git]
+    git clone https://github.com/dawidgola/frontierx_task.git
    ```
 2. Install packages
 
