@@ -51,7 +51,7 @@ const Accordion = ({
       <CSSTransition
         in={open}
         nodeRef={nodeRef}
-        timeout={300}
+        timeout={350}
         unmountOnExit
         appear
         className="mt-5 mb-12 max-h-[316px] overflow-y-auto scrollbar-custom"

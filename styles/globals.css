@@ -29,16 +29,21 @@ body {
 }
 
 .transition-enter {
-  opacity: 0;
+  opacity: 0.01;
+  transform: scale(0.75);
 }
 .transition-enter-active {
   opacity: 1;
-  transition: opacity 300ms ease-in;
+  transform: scale(1);
+  transition: all 350ms ease-out;
 }
+
 .transition-exit {
   opacity: 1;
+  transform: scale(1);
 }
 .transition-exit-active {
-  opacity: 0;
-  transition: opacity 300ms ease-in;
+  opacity: 0.01;
+  transform: scale(0.95);
+  transition: all 350ms ease-out;
 }
