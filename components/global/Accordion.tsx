@@ -32,7 +32,7 @@ const Accordion = ({
             {secondary && (
               <div className="ml-1.5 flex items-center">
                 <Tooltip
-                  content="text"
+                  content="tooltip"
                   placement="right"
                   background="#0D0D0D"
                   radius="5"
