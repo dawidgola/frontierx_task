@@ -21,6 +21,13 @@ module.exports = {
       },
       backgroundColor: {
         'pattern-black': 'rgba(13, 13, 13, 0.5)',
+        'pattern-gray5': '#0d0d0d',
+        'pattern-gray12': '#1F1F1F',
+      },
+      colors: {
+        'pattern-red': '#FC364C',
+        'pattern-light-gray': '#8E8B8F',
+        'pattern-gray': '#A2A2A2',
       },
     },
   },

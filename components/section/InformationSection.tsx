@@ -8,7 +8,7 @@ const InformationSection = (): JSX.Element => (
         Lorem ipsum
       </h1>
       <p className="text-center text-xs sm:text-base mb-1.5">
-        Created by:<span className="text-[#FC364C] ml-0.5">Lorem ipsum</span>
+        Created by:<span className="text-pattern-red ml-0.5">Lorem ipsum</span>
       </p>
       <p className="text-center text-xs sm:text-base">
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem.

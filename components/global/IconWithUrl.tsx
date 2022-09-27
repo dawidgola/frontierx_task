@@ -18,7 +18,7 @@ const IconWithUrl = ({
     <div className="flex w-8 h-8 items-center justify-center">{icon}</div>
     <div
       className={`ml-4 text-sm min-w-[120px] ${
-        secondary ? 'text-[#FC364C]' : 'text-white'
+        secondary ? 'text-pattern-red' : 'text-white'
       }`}
     >
       <Link href={url}>
